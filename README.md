@@ -51,9 +51,71 @@ Varki Sebi - 1.5 years exp, recently with PS, had worked with react, to become f
 Vikas Verma - 12 years exp, knows angular, worked on ionic,
 
 micro front end
-Day 1 Contents
+
+## Day 1 Contents
+
 Disadvantages of using console API Overview of the Chrome Developer Tools Debugging JS using the Chrome Developer Tools Developer Tools in other browsers
 
 Single-threaded nature of JavaScript The Event Loop and event handling Synchronous (blocking) and Asynchronous (non-blocking) methods
 
-Block-level scoping and the use of let, const Template strings Default Parameters Object and Array Destructuring Rest and spread operators (includes object spread), making immutable changes, deep and shallow copies of objects Arrow Functions Classes, Class Inheritance Modules Promises async…await
+Block-level scoping and the use of let, const - const
+
+- let - var - nothing
+
+```
+    const myvar = "hello;
+    let myvar = "hello;
+    var myvar = "hello;
+    myvar = "hello; -> window.myvar = "hello;
+```
+
+Template strings Default Parameters Object and Array Destructuring Rest and spread operators (includes object spread), making immutable changes, deep and shallow copies of objects Arrow Functions Classes, Class Inheritance Modules Promises async…await
+
+Kafka & how esb is used
+
+Cloud - aws azure Containarization - docker
+
+prefer not using log
+instead we can use debugger
+browers (chrome)
+code
+
+function doSomething() {
+console.log("One");
+console.log("two");
+
+    fetch(
+            "http://yoursite.com/application/uri/resource",
+        (data) => {document.getElementById("mydiv").innerHTML = data})
+
+    console.log("Four");
+
+}
+es6 content
+function myfunction(val) {this.val = val}
+// this is anonymous function + this cannot hold the referece of this
+let myfunction = (val) => {this.val this does not work (x)}
+a function inside a function is called closure
+-- named closured
+function one() {
+// variables which are declared here are accessable to two () +
+// since its a function its only loaded
+function two() {}
+
+        two();
+    }
+    let oneRef = one();
+
+
+    --
+
+
+    function one(val1) {
+        return function(val2) {
+            return val1 + val2;
+        }
+    }
+
+callback
+promise
+error first approach
