@@ -80,6 +80,7 @@ instead we can use debugger
 browers (chrome)
 code
 
+````
 function doSomething() {
 console.log("One");
 console.log("two");
@@ -89,9 +90,11 @@ console.log("two");
         (data) => {document.getElementById("mydiv").innerHTML = data})
 
     console.log("Four");
+    ```
 
 }
 es6 content
+```
 function myfunction(val) {this.val = val}
 // this is anonymous function + this cannot hold the referece of this
 let myfunction = (val) => {this.val this does not work (x)}
@@ -116,12 +119,16 @@ function two() {}
         }
     }
 
+    ```
+
 callback
 promise
 error first approach
 
-Day 2
+## Day 2 Contents
+
 Generators
+```
 let arr = [32,5,6,8,9,02,1];
 
     for(let i=0;i< arr.length; i++) {
@@ -133,6 +140,8 @@ let arr = [32,5,6,8,9,02,1];
     -- fibonacci series
     let val = yeild currVal;
     [currVal, nextVal] = [nextVal, nextVal + currVal];
+
+    ```
 
 Topics
 
@@ -193,6 +202,8 @@ NoSQL -> DB, un-Normalization,
 by default
 /data/db - linux, mac,
 c:\data\db - win
+```
+
 create a folder in desktop -> sapient-db
 27017
 mongod --dbpath .
@@ -261,3 +272,5 @@ db.createCollection("collName", options)
 db.createCollection("capCol", {capped:true, autoIndexId:true, size:1000, max:5})
 
 db.emps.update({empName:"hitesh"}, {$set:{empName:"Hitesh Patil", email:"hitesh@ps.com"}})
+```
+````
