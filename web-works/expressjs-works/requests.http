@@ -1,0 +1,13 @@
+GET http://localhost:3000/ HTTP/1.1
+
+###
+GET http://localhost:3000/example HTTP/1.1
+
+###
+GET http://localhost:3000/example/101/Sourabh HTTP/1.1
+
+###
+GET http://localhost:3000/hello HTTP/1.1
+
+###
+GET http://localhost:3000/heppo HTTP/1.1
